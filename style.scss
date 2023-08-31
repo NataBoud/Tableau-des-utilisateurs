@@ -1,0 +1,271 @@
+body {
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #040910;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: #4b5d7a;
+  text-decoration: none;
+}
+a:hover {
+  color: #040910;
+}
+
+.bg-primary {
+    background-color: #553f94 !important;
+  }
+
+.bg-secondary {
+  background-color: #7557ca !important;
+}
+
+.bg-light {
+  background-color: #efebf3 !important;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.0rem);
+  padding-left: var(--bs-gutter-x,.0rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#navbarDropdown {
+  vertical-align: middle;
+}
+
+.navbar-light .navbar-brand, 
+.navbar-light .navbar-nav .nav-link{
+  color: #ffffff;
+  
+}
+
+.nav-item {
+  color: #ffffff;
+  
+}
+
+.nav-item:hover {
+  color: #e7e7ed;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.navbar-light .navbar-brand:hover, 
+.navbar-light .navbar-nav .nav-link:hover{
+  color: #ffffff;
+}
+
+.form-control {
+  width: 30%;
+  color: #8f8f97 !important;
+  font-size: .9rem;
+}
+
+.row > * {
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0);
+  padding-left: calc(var(--bs-gutter-x) * 0);
+  margin-top: var(--bs-gutter-y);
+}
+
+.container-buttons {
+  vertical-align: middle;
+}
+
+.btn {
+  padding: 1em;
+  padding-top: .4em;
+  padding-bottom: .5em;
+  color: #ffffff;
+  font-weight: 600;
+  border: 1px solid;
+  border-color: #5d5f62 !important;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #553f94 !important;
+}
+
+.btn-secondary-1 {
+  padding: 1.1em;
+  padding-top: 1.1em;
+  padding-bottom: 1.2em;
+  color: #8f8f97;
+  font-weight: 500;
+  border-color: #b4b0b0 !important;
+  border: 0px solid;
+  border-radius: .3rem;
+}
+
+.btn-secondary {
+  padding: 1.3em;
+  padding-top: .4em;
+  padding-bottom: .5em;
+  color: #4b5d7a;
+  font-weight: 600;
+  border-color: #b4b0b0 !important;
+  border: 1px solid;
+  border-radius: .3rem;
+}
+
+.btn-secondary:hover {
+  color: #ffffff;
+  background-color: #a5aebe !important;
+}
+
+.btn-sm {
+  padding: 1.3em;
+  padding-top: .1em;
+  padding-bottom: .2em;
+  font-size: .65rem;
+  border-radius: .3rem;
+  font-weight: 700;
+}
+
+.leftGroup {
+  float: left; 
+}
+
+.rightGroup {
+  display: grid;
+  float: right;
+  color: #8f8f97;
+  justify-content: end; 
+}
+
+.h3 {
+  color: #040910;
+}
+
+// navbar vertical
+
+.border-start-0 {
+  border-left: 0px solid #ffffff !important;
+}
+.border-start-0:focus {
+  border-left: 3px solid #ffffff !important;
+}
+
+.border-start-0:hover {
+  border-left: 3px solid #ffffff !important;
+  
+}
+
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+
+.nav-link:focus {
+  color: #ffffff;
+  background-color: #8268cf;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  background-color: #7760bc;
+}
+
+.nav .li {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* USER LIST TABLE */
+.user-list tbody td > img {
+position: relative;
+float: left;
+margin-right: 2rem;
+}
+
+.rounded{
+  border-radius: .55rem !important;
+  height: 2.55rem;
+}
+
+
+.table {
+  border-radius: 0.25rem;
+  color: #8f8f97;
+  vertical-align: middle;
+}
+
+ .table  > :not(caption) > * > * {
+  padding: .6rem .6rem;
+  background-color: var(--bs-table-bg);
+  border-bottom-width: 1px;
+}
+
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: #e9e4e4;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+th {
+  font-weight: 500;
+}
+td {
+  font-size: .8em;
+  font-weight: 600;
+  color: #4b5d7a;
+}
+
+.badge {
+  display: inline-block;
+  
+  padding-top: .3em;
+  padding-bottom: .4em;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1;
+  color: #60c877;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: .25rem;
+  background-color: #cbebd0;
+  width: 5rem;
+}
+
+#inactive {
+  color: #f6807a;
+  background-color: #fccdcb;
+}
+
+.table thead > tr > th span {
+  display: inline-block;
+  padding: .5rem .5rem;
+}
+
+.table a.table-link {
+text-decoration: none;
+color: #7760bc;
+padding-right: 1rem;
+}
+.table a.table-link:hover {
+text-decoration: none;
+color: #553f94;
+}
+
+
+
+
