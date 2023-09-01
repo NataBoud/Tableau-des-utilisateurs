@@ -92,6 +92,33 @@ a:hover {
   margin-top: var(--bs-gutter-y);
 }
 
+.userLogin {
+  display: grid;
+  float: left;
+  color: #8f8f97;
+  font-size: .945em;
+  font-weight: 600;
+  justify-content: end; 
+}
+#userFullName {
+  color: #ffffff;
+  font-size: .945em;
+  font-weight: 600;
+}
+
+#status {
+  color: #ffffff;
+  font-size: .785em;
+  font-weight: 400;
+  margin-right: .8rem;
+}
+#imgUserLogin {
+  height: 2.3rem;
+  margin-right: .8rem;
+  margin-left: 1.5rem;
+}
+
+
 /* BUTTONS  */
 
 .container-buttons {
@@ -164,7 +191,6 @@ a:hover {
   font-weight: 600;
   justify-content: end; 
 }
-
 
 /* SIDEBAR  */
 
@@ -249,6 +275,7 @@ margin-right: 2rem;
 th {
   font-weight: 600;
   font-size: .9em;
+  cursor: pointer;
 }
 td {
   font-size: .8em;
