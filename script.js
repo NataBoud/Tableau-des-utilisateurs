@@ -11,18 +11,18 @@ var myArray = [
     },
 
     {'photo': '<img id="img" src="https://randomuser.me/api/portraits/thumb/men/77.jpg"class="rounded" alt=""/>', 
-    'member':'Linda Funke', 
+    'member':'Eve Holt', 
     'mobile':'06 32 45 34 14',
-    'email':'<a href="#">lindsay.ferguson@reqres.in</a>',
+    'email':'<a href="#">eve.holt@reqres.in</a>',
     'status': '<span class="badge rounded-pill" id="badge">Active</span>',
     'operation': '<a href="#" class="table-link"><i class="fs-4 bi bi-pencil-square pe-1"></i></a><a href="#" class="table-link"><i  class="fs-5 bi bi-pencil pe-1"></i></a><a href="#" class="table-link"><i class="fs-5 bi bi-trash pe-1"></i></a>',         
     'action': '<button type="button" class="btn bg-secondary btn-sm">Login</button>'
     },
 
     {'photo': '<img id="img" src="https://randomuser.me/api/portraits/thumb/women/26.jpg"class="rounded" alt=""/>', 
-    'member':'Linda Funke', 
+    'member':'Emma Wong', 
     'mobile':'06 32 45 34 14',
-    'email':'<a href="#">lindsay.ferguson@reqres.in</a>',
+    'email':'<a href="#">emma.wong@reqres.in</a>',
     'status': '<span class="badge rounded-pill" id="badge">Active</span>',
     'operation': '<a href="#" class="table-link"><i class="fs-4 bi bi-pencil-square pe-1"></i></a><a href="#" class="table-link"><i  class="fs-5 bi bi-pencil pe-1"></i></a><a href="#" class="table-link"><i class="fs-5 bi bi-trash pe-1"></i></a>',          
     'action': '<button type="button" class="btn bg-secondary btn-sm">Login</button>'
@@ -65,32 +65,43 @@ var myArray = [
     },
 
     {'photo': '<img id="img" src="https://randomuser.me/api/portraits/thumb/women/55.jpg"class="rounded" alt=""/>', 
-    'member':'Linda Funke', 
+    'member':'Janet Weaver', 
     'mobile':'06 32 45 34 14',
-    'email':'<a href="#">lindsay.ferguson@reqres.in</a>',
+    'email':'<a href="#">janet.weaver@reqres.in</a>',
     'status': '<span class="badge rounded-pill" id="inactive">Inactive</span>',
     'operation': '<a href="#" class="table-link"><i class="fs-4 bi bi-pencil-square pe-1"></i></a><a href="#" class="table-link"><i  class="fs-5 bi bi-pencil pe-1"></i></a><a href="#" class="table-link"><i class="fs-5 bi bi-trash pe-1"></i></a>',        
     'action': '<button type="button" class="btn bg-secondary btn-sm">Login</button>'
     },
 
-    {'photo': '<img id="img" src="https://randomuser.me/api/portraits/thumb/women/45.jpg"class="rounded" alt=""/>', 
-    'member':'Linda Funke', 
+    {'photo': '<img id="img" src="https://reqres.in/img/faces/1-image.jpg"class="rounded" alt=""/>', 
+    'member':'Charles Morris', 
     'mobile':'06 32 45 34 14',
-    'email':'<a href="#">lindsay.ferguson@reqres.in</a>',
+    'email':'<a href="#">charles.morris@reqres.in</a>',
     'status': '<span class="badge rounded-pill" id="badge">Active</span>',
     'operation': '<a href="#" class="table-link"><i class="fs-4 bi bi-pencil-square pe-1"></i></a><a href="#" class="table-link"><i  class="fs-5 bi bi-pencil pe-1"></i></a><a href="#" class="table-link"><i class="fs-5 bi bi-trash pe-1"></i></a>',          
     'action': '<button type="button" class="btn bg-secondary btn-sm">Login</button>'
     },
 
     {'photo': '<img id="img" src="https://randomuser.me/api/portraits/thumb/men/37.jpg"class="rounded" alt=""/>', 
-    'member':'Linda Funke', 
+    'member':'George Bluth', 
     'mobile':'06 32 45 34 14',
-    'email':'<a href="#">lindsay.ferguson@reqres.in</a>',
+    'email':'<a href="#">george.bluth@reqres.in</a>',
     'status': '<span class="badge rounded-pill" id="badge">Active</span>',
     'operation': '<a href="#" class="table-link"><i class="fs-4 bi bi-pencil-square pe-1"></i></a><a href="#" class="table-link"><i  class="fs-5 bi bi-pencil pe-1"></i></a><a href="#" class="table-link"><i class="fs-5 bi bi-trash pe-1"></i></a>',         
     'action': '<button type="button" class="btn bg-secondary btn-sm">Login</button>'
     },
 ]
+
+// $.ajax({
+//     method:'GET',
+//     url:'https://reqres.in/api/users',
+//     success:function(response){
+//         myArray = response.data
+//         buildTable(myArray)
+//         console.log(myArray)
+//     }
+// })
+
 
 buildTable(myArray)
 
@@ -113,13 +124,4 @@ function buildTable(data){
 }
 
 
-// $.ajax({
-//     method:'GET',
-//     url:'https://reqres.in/api/users',
-//     success:function(response){
-//         myArray = response.data
-//         buildTable(myArray)
-//         console.log(myArray)
-//     }
-// })
 
