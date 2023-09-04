@@ -121,9 +121,11 @@ function searchTable(value, data){
     return filteredData 
 }
 
-// Sort by order
 
-$('th').on('click', function(){
+
+// Sort by order - member name
+
+$('#sortMember').on('click', function(){
     var column = $(this).data('colname')
     var order = $(this).data('order')
 
@@ -143,6 +145,78 @@ $('th').on('click', function(){
     buildTable(myArray)
 })
 
+$('#sortMobile').on('click', function(){
+    var column = $(this).data('colname')
+    var order = $(this).data('order')
+
+    var text = $(this).html()
+     text = text.substring(0, text.length - 1);
+
+    if (order == 'desc'){
+        $(this).data('order', 'asc')
+        myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
+        text += '&#9660'
+    }else{
+        $(this).data('order', 'desc')
+        myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
+        text += '&#9660'
+    }
+    $(this).html(text)
+    buildTable(myArray)
+})
+
+$('#sortEmail').on('click', function(){
+    var column = $(this).data('colname')
+    var order = $(this).data('order')
+
+    var text = $(this).html()
+     text = text.substring(0, text.length - 1);
+
+    if (order == 'desc'){
+        $(this).data('order', 'asc')
+        myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
+        text += '&#9660'
+    }else{
+        $(this).data('order', 'desc')
+        myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
+        text += '&#9660'
+    }
+    $(this).html(text)
+    buildTable(myArray)
+})
+
+$('#sortStatus').on('click', function(){
+    var column = $(this).data('colname')
+    var order = $(this).data('order')
+
+    var text = $(this).html()
+     text = text.substring(0, text.length - 1);
+
+    if (order == 'desc'){
+        $(this).data('order', 'asc')
+        myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
+        text += '&#9660'
+    }else{
+        $(this).data('order', 'desc')
+        myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
+        text += '&#9660'
+    }
+    $(this).html(text)
+    buildTable(myArray)
+})
+
+
+
+
+
+// Sorting by status
+
+
+var filteredData = myArray.filter(e => e.status.includes('Inactive'))
+console.table(filteredData)
+
+
+
 // Building a table
 
 function buildTable(data){
@@ -156,9 +230,9 @@ function buildTable(data){
                         <td>${data[i].member}</td>
                         <td>${data[i].mobile}</td>
                         <td>${data[i].email}</td>
-                        <td>${data[i].status}</td>
-                        <td>${data[i].operation}</td>
-                        <td>${data[i].action}</td>
+                        <td id="tdStatus">${data[i].status}</td>
+                        <td id="tdOperation">${data[i].operation}</td>
+                        <td id="tdAction">${data[i].action}</td>
                     </tr>`
         table.innerHTML += row 
     }

@@ -41,7 +41,7 @@
                         <li>
                             <div class="userLogin">
                                 <span id="userFullName">Emma Wong</span>
-                                <span id="status">Admin for Associations</span>
+                                <span id="userStatus">Admin for Associations</span>
                             </div>
                         </li>
 
@@ -60,49 +60,49 @@
                 <div class="d-flex flex-column align-items-sm-start text-white min-vh-100">
 
                     <div class="nav flex-column mt-4 mb-sm-2 mt-2 align-items-sm-start w-100" > 
-                        <li class="w-100 border-start-0">
+                        <li class="w-100">
                             <a href="#" data-bs-toggle="collapse" class="nav-link ps-4">
                                 <i class="fs-7 bi-person-fill ps-2"></i> <span class="ms-2 d-none d-sm-inline">Profile</span>
                             </a>
                         </li>
                         
-                        <li class="w-100 border-start-0">
+                        <li class="w-100">
                             <a href="#" data-bs-toggle="collapse" class="nav-link ps-4">
                                 <i class="fs-7 bi-people-fill ps-2"></i> <span class="ms-2 d-none d-sm-inline">Users</span> 
                             </a>
                         </li>
 
-                        <li class="w-100 border-start-0">
+                        <li class="w-100">
                             <a href="#" data-bs-toggle="collapse" class="nav-link ps-4">
                                 <i class="fs-7 bi-filter-square-fill ps-2"></i> <span class="ms-2 d-none d-sm-inline">Control panel</span>
                             </a>
                         </li>
 
-                        <li class="w-100 border-start-0">
+                        <li class="w-100">
                             <a href="#" data-bs-toggle="collapse" class="nav-link ps-4">
                                 <i class="fs-7 bi-grid-fill ps-2"></i> <span class="ms-2 d-none d-sm-inline">Projects</span>
                             </a> 
                         </li>
 
-                        <li class="w-100 border-start-0">
+                        <li class="w-100">
                             <a href="#" data-bs-toggle="collapse" class="nav-link ps-4">
                                 <i class="fs-7 bi-folder-fill ps-2"></i> <span class="ms-2 d-none d-sm-inline">Tasks</span> 
                             </a> 
                         </li>
 
-                        <li class="w-100 border-start-0">
+                        <li class="w-100">
                             <a href="#" data-bs-toggle="collapse" class="nav-link ps-4">
                                 <i class="fs-7 bi-arrow-right-square-fill ps-2"></i> <span class="ms-2 d-none d-sm-inline">Logs</span> 
                             </a> 
                         </li>
 
-                        <li class="w-100 border-start-0">
+                        <li class="w-100">
                             <a href="#" data-bs-toggle="collapse" class="nav-link ps-4">
                                 <i class="fs-7 bi-chat-left-text-fill ps-2"></i> <span class="ms-2 d-none d-sm-inline">Group chats</span> 
                             </a> 
                         </li>
 
-                        <li class="w-100 border-start-0">
+                        <li class="w-100">
                             <a href="#" data-bs-toggle="collapse" class="nav-link ps-4">
                                 <i class="fs-7 bi-file-text-fill ps-2"></i> <span class="ms-2 d-none d-sm-inline">Reports</span> 
                             </a> 
@@ -118,10 +118,15 @@
 
                         <div class="container-buttons mt-3">
                             <div class="leftGroup ">
-                                <button type="button" class="btn-secondary-1 bg-white shadow-sm">
-                                    <a href="" class="btn-secondary-1 px-4">Members</a>
-                                    <a href="" class="btn-secondary-1 px-4">Admins</a>
+                                <button type="button" class="btn-secondary-1 bg-white shadow-sm me-4">
+                                    <a href="#" id="selector" class="px-4">Members</a>
+                                    <a href="#" id="selector"class="px-4">Admins</a>
                                 </button>
+
+                                <!-- <button type="button" class="btn-secondary-1 bg-white shadow-sm me-4">
+                                    <a href="#" id="selectorActive" class="px-4">Active</a>
+                                    <a href="#" id="selectorInactive"class="px-4">Inactive</a>
+                                </button> -->
                             </div>
 
                             <div class="rightGroup">
@@ -147,17 +152,25 @@
                         </div>
 
                         <div class="col-lg-12 me-4 ps-1">
-                            <div class="table shadow-sm bg-white mt-3 me-4 px-4 pb-1">
+                            <div class="table shadow-sm bg-white mt-3 me-4 px-4 py-0">
                                 <table class="table user-list">
                                     <thead>
                                         <tr>
                                             <th>Photo</th>
-                                            <th data-colname="member" data-order="desc">Member name &#9650</th>
-                                            <th data-colname="mobile" data-order="desc">Mobile &#9650</th>
-                                            <th data-colname="email" data-order="desc">Email &#9650</th>
-                                            <th >Status</th>
-                                            <th>Operation</th>
-                                            <th>Action</th>
+                                            <th id="sortMember" data-colname="member" data-order="desc">Member name &#9650</th>
+                                            <th id="sortMobile" data-colname="mobile" data-order="desc">Mobile &#9650</th>
+                                            <th id="sortEmail" data-colname="email" data-order="desc">Email &#9650</th>
+                                            <th id="sortStatus" data-colname="status" data-order="desc" class="text-center">Status &#9650
+                                                <!-- <div class="box">
+                                                    <span>Status</span>
+                                                    <div class="box1">
+                                                        <span class="small-box px-1" id="statusActive">active</span>
+                                                        <span class="big-box px-1" id="statusInactive">inactive</span>
+                                                    </div>
+                                                </div> -->
+                                            </th>
+                                            <th class="text-center">Operation</th>
+                                            <th class="text-center">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody id="myTable"></tbody>
