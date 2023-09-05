@@ -100,7 +100,6 @@ $('#myInput').on('keyup', function(){
    var data = searchTable(value, myArray)
 
    buildTable(data)
- 
 })
 
 $('#myInput').val('');
@@ -121,11 +120,24 @@ function searchTable(value, data){
     return filteredData 
 }
 
+// Sorting by status Active/Inactive
 
+var a = document.querySelectorAll('#selectorInactive');
+var a = document.querySelectorAll('#selectorActive');
 
-// Sort by order - member name
+$('#selectorInactive').on('click', function(){
+    var filteredData = myArray.filter(e => e.status.includes('Inactive'))
+    buildTable(filteredData)
+})
 
-$('#sortMember').on('click', function(){
+ $('#selectorActive').on('click', function(){
+    var filteredData = myArray.filter(e => e.status.includes('Active'))
+    buildTable(filteredData)
+})
+  
+// Sorting by order 
+
+$('#sortMember, #sortMobile, #sortEmail, #sortStatus').on('click', function(){
     var column = $(this).data('colname')
     var order = $(this).data('order')
 
@@ -144,78 +156,6 @@ $('#sortMember').on('click', function(){
     $(this).html(text)
     buildTable(myArray)
 })
-
-$('#sortMobile').on('click', function(){
-    var column = $(this).data('colname')
-    var order = $(this).data('order')
-
-    var text = $(this).html()
-     text = text.substring(0, text.length - 1);
-
-    if (order == 'desc'){
-        $(this).data('order', 'asc')
-        myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
-        text += '&#9660'
-    }else{
-        $(this).data('order', 'desc')
-        myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
-        text += '&#9660'
-    }
-    $(this).html(text)
-    buildTable(myArray)
-})
-
-$('#sortEmail').on('click', function(){
-    var column = $(this).data('colname')
-    var order = $(this).data('order')
-
-    var text = $(this).html()
-     text = text.substring(0, text.length - 1);
-
-    if (order == 'desc'){
-        $(this).data('order', 'asc')
-        myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
-        text += '&#9660'
-    }else{
-        $(this).data('order', 'desc')
-        myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
-        text += '&#9660'
-    }
-    $(this).html(text)
-    buildTable(myArray)
-})
-
-$('#sortStatus').on('click', function(){
-    var column = $(this).data('colname')
-    var order = $(this).data('order')
-
-    var text = $(this).html()
-     text = text.substring(0, text.length - 1);
-
-    if (order == 'desc'){
-        $(this).data('order', 'asc')
-        myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
-        text += '&#9660'
-    }else{
-        $(this).data('order', 'desc')
-        myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
-        text += '&#9660'
-    }
-    $(this).html(text)
-    buildTable(myArray)
-})
-
-
-
-
-
-// Sorting by status
-
-
-var filteredData = myArray.filter(e => e.status.includes('Inactive'))
-console.table(filteredData)
-
-
 
 // Building a table
 
