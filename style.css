@@ -44,7 +44,7 @@ a:hover {
 
 /* .NAVBAR  */
 
-#navbarDropdown {
+#navbarSupportedContent {
   vertical-align: middle;
 }
 
@@ -63,7 +63,7 @@ a:hover {
 
 .navbar-brand {
   font-size: 1.935rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .form-control-1 {
@@ -212,18 +212,18 @@ a:hover {
   color: #ffffff;
   background-color: #7760bc;
   padding: .8rem;
-  padding-left: 2.9rem;
+  padding-left: 2.7rem;
   padding-right: 2.9rem;
-  border-left: 3px solid #ffffff !important;
+  border-left: .2rem solid #ffffff !important;
 }
 
 .nav-link:focus {
   color: #ffffff;
   background-color: #8268cf;
   padding: .8rem;
-  padding-left: 2.9rem;
+  padding-left: 2.7rem;
   padding-right: 2.9rem;
-  border-left: 3px solid #ffffff !important;
+  border-left: .2rem solid #ffffff !important;
 }
 
 .nav .li {
@@ -363,103 +363,160 @@ th:first-child {
   }
   .nav-link:hover {
     padding: .8rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2.3rem;
+    padding-right: 2.9rem;
+    border-left: .2rem solid #ffffff !important;
   }
+  
   .nav-link:focus {
     padding: .8rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2.3rem;
+    padding-right: 2.9rem;
+    border-left: .2rem solid #ffffff !important;
   }
 }
 
-@media (max-width: 1216px) {
+@media (max-width: 1208px) {
   .rightGroup {
     float: left;
   }
   
   a.nav-link {
-    font-size: .9rem;
-    padding-left: 2.2rem;
+    font-size: .875rem;
+    padding-left: 1.8rem;
     padding-right: 2.2rem;
   }
   .nav-link:hover {
     padding: .8rem;
-    padding-left: 2.2rem;
+    padding-left: 1.6rem;
     padding-right: 2.2rem;
+    border-left: .2rem solid #ffffff !important;
   }
   .nav-link:focus {
     padding: .8rem;
-    padding-left: 2.2rem;
+    padding-left: 1.6rem;
     padding-right: 2.2rem;
+    border-left: .2rem solid #ffffff !important;
   }
 }
 
 @media (max-width: 1180px) {
   a.nav-link {
-    font-size: 1rem;
+    font-size: .9rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
   .nav-link:hover {
     padding: .8rem;
-    padding-left: 2.2rem;
+    padding-left: 2.3rem;
     padding-right: 2.5rem;
+    border-left: .2rem solid #ffffff !important;
   }
   .nav-link:focus {
     padding: .8rem;
-    padding-left: 2.5rem;
+    padding-left: 2.3rem;
     padding-right: 2.5rem;
+    border-left: .2rem solid #ffffff !important;
+  }
+  .navbar-brand {
+    font-size: 1.735rem;
+    padding-left: 1rem;
   }
 }
 
-@media (max-width: 884px) {
-
+@media (max-width: 888px) {
   *, ::after, ::before {
     box-sizing: inherit;
   }
-  .btn-secondary-1  {
-    padding: .65em;
-    padding-top: .7em;
-    padding-bottom:.7em;
-    font-size: .795rem;
-    
-  }
   .px-4 {
-    padding-right: .5rem !important;
-    padding-left: .5rem !important;
+    padding-right: 0.65rem !important;
+    padding-left: 0.65rem !important;
   }
-  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    width: 100%;
-    padding-right: var(--bs-gutter-x,.1rem);
-    padding-left: var(--bs-gutter-x,.1rem);
-   
+  a.nav-link {
+    font-size: .8rem;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
   }
+  .nav-link:hover {
+    padding: .7rem;
+    padding-left: 2.1rem;
+    padding-right: 2.3rem;
+    border-left: .2rem solid #ffffff !important;
+  }
+  .nav-link:focus {
+    padding: .7rem;
+    padding-left: 2.1rem;
+    padding-right: 2.3rem;
+    border-left: .2rem solid #ffffff !important;
+  }
+  .navbar-brand {
+    font-size: 1.735rem;
+    padding-left: 1rem;
+  }
+  
   .rightGroup {
     font-size: .75rem;
     justify-content: start;
     padding-left: .5rem; 
   }
-  a.nav-link {
-    font-size: .9rem;
-    padding-left: 1.35rem;
-    padding-right: .8rem;
-  }
-  .nav-link:hover {
-    padding: .8rem;
-    padding-left: 1.35rem;
-    padding-right: .8rem;
-  }
-  .nav-link:focus {
-    padding: .8rem;
-    padding-left: 1.35rem;
-    padding-right: .8rem;
-  }
-  
   th {
     min-width: 6.8rem;
   }
 }
+
+@media (max-width: 576px) {
+  *, ::after, ::before {
+    box-sizing: inherit;
+  }
+  a.nav-link {
+    font-size: .8rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+  }
+  .nav-link:hover {
+    padding: .7rem;
+    padding-left: .6rem;
+    padding-right: .8rem;
+    border-left: .2rem solid #ffffff !important;
+  }
+  .nav-link:focus {
+    padding: .7rem;
+    padding-left: .6rem;
+    padding-right: .8rem;
+    border-left: .2rem solid #ffffff !important;
+  }
+  .navbar-brand {
+    font-size: 1.555rem;
+    padding-left: 1rem;
+   
+  }
+
+  .navbar-brand {
+    font-size: 1.735rem;
+    padding-left: .5rem;
+  }
+  
+  .btn-secondary-1  {
+    padding: .9em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: .735rem;
+    
+  }
+  .px-4 {
+    padding-right: 0.75rem !important;
+    padding-left: 0.75rem !important;
+  }
+  #selector, #selectorActive, #selectorInactive {
+    padding-top: .9em;
+    padding-bottom: .9em;
+  }
+ 
+  th {
+    min-width: 6.95rem;
+  }
+}
+
 
 .badge {
   display: inline-block; 
