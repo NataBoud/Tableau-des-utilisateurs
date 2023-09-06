@@ -6,7 +6,6 @@ body {
   color: #040910;
 }
 
-
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   color: #040910;
   margin-top: 0;
@@ -14,9 +13,11 @@ body {
   font-weight: 600;
   line-height: 1.2;
 }
-
+.h5 {
+  font-size: 1.3rem;
+}
 a {
-  color: #4b5d7a;
+  color: #8693a7;
   text-decoration: none;
 }
 a:hover {
@@ -32,7 +33,7 @@ a:hover {
 }
 
 .bg-light {
-  background-color:#efebf3 !important;
+  background-color:#f3f0f5 !important;
 }
 
 .row > * {
@@ -61,17 +62,17 @@ a:hover {
 }
 
 .navbar-brand {
-  font-size: 2.3rem;
-  font-weight: 500;
+  font-size: 1.935rem;
+  font-weight: 600;
 }
 
 .form-control-1 {
-  width: 40%;
+  width: 35%;
   color: #848490 !important;
   font-weight: 600;
   display: block;
   padding: .4rem .95rem;
-  font-size: .85rem; 
+  font-size: .8rem; 
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -111,14 +112,14 @@ a:hover {
 /* BUTTONS  */
 
 .btn {
-  padding: 1.3em;
-  padding-top: .45em;
-  padding-bottom: .55em;
+  padding: 1.1em;
+  padding-top: .54em;
+  padding-bottom: .54em;
   color: #ffffff;
   font-weight: 700;
   border: 1px solid;
   border-color: #553f94 !important;
-  font-size: .85rem;
+  font-size: .8rem;
 }
 
 .btn:hover {
@@ -132,7 +133,7 @@ a:hover {
   padding-bottom: 1em;
   color: #8f8f97;
   font-weight: 600;
-  font-size: .85rem;
+  font-size: .8rem;
   border-color: #b4b0b0 !important;
   border: 0px solid;
   border-radius: .3rem;
@@ -141,7 +142,7 @@ a:hover {
 .btn-secondary {
   padding: 1.3em;
   padding-top: .45em;
-  padding-bottom: .55em;
+  padding-bottom: .45em;
   color: #4b5d7a;
   font-weight: 700;
   border-color: #b4b0b0 !important;
@@ -190,7 +191,7 @@ a:hover {
   &:focus,
   &:active {
     color: #040910;
-    border-bottom: 2px solid #553f94 !important;
+    border-bottom: 2px solid #7557ca !important;
   }
 }
 
@@ -288,23 +289,26 @@ float: left;
 /* img */
 .rounded{
   border-radius: .55rem !important;
-  height: 2.15rem;
+  height: 2.1rem;
 }
 
 .table {
   border-radius: 0.25rem;
-  color: #8f8f97;
+  color: #7d8ca3;
   vertical-align: middle;
 }
 
 .table  > :not(caption) > * > * {
   border-bottom-width: 1px;
+  padding-bottom: .4rem;
+  padding-top: .4rem;
+  border-bottom-color: #f7f3f9;
 }
 
 .table > :not(:last-child) > :last-child > * {
-  border-bottom-color: #f8f6f9;
-  padding-bottom: .9rem;
-  padding-top: .9rem;
+  border-bottom-color: #f7f3f9;
+  padding-bottom: .8rem;
+  padding-top: .8rem;
 }
 
 .table > :not(caption) > * > * {
@@ -329,9 +333,8 @@ float: left;
 
 th {
   font-weight: 600;
-  font-size: .9em;
+  font-size: .865em;
   vertical-align: middle;
-  padding: .5rem;
   padding-left: 1.5rem;
 }
 
@@ -340,9 +343,9 @@ th {
 }
 
 td {
-  font-size: .8em;
+  font-size: .785em;
   font-weight: 600;
-  color: #4b5d7a;
+  color: #7d8ca3;
 }
 
 th:first-child {
@@ -419,8 +422,8 @@ th:first-child {
     padding: .65em;
     padding-top: .7em;
     padding-bottom:.7em;
-    font-size: .89rem;
-    margin-right: .5rem;
+    font-size: .795rem;
+    
   }
   .px-4 {
     padding-right: .5rem !important;

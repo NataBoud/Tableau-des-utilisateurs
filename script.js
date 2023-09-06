@@ -29,7 +29,7 @@ var myArray = [
     },
 
     {'photo': '<img id="img" src="https://randomuser.me/api/portraits/thumb/men/5.jpg"class="rounded" alt=""/>', 
-    'member':'Linda Funke', 
+    'member':'Boris Gunking', 
     'mobile':'06 32 45 34 14',
     'email':'<a href="#">lindsay.ferguson@reqres.in</a>',
     'status': '<span class="badge rounded-pill" id="badge">Active</span>',
@@ -38,7 +38,7 @@ var myArray = [
     },
 
     {'photo': '<img id="img" src="https://randomuser.me/api/portraits/thumb/women/8.jpg"class="rounded" alt=""/>', 
-    'member':'Linda Funke', 
+    'member':'Lisa Ford', 
     'mobile':'77 32 45 34 55',
     'email':'<a href="#">lindsay.ferguson@reqres.in</a>',
     'status': '<span class="badge rounded-pill" id="inactive">Inactive</span>',
@@ -47,7 +47,7 @@ var myArray = [
     },
 
     {'photo': '<img id="img" src="https://randomuser.me/api/portraits/thumb/men/62.jpg"class="rounded" alt=""/>', 
-    'member':'Linda Funke', 
+    'member':'Eric Stuart', 
     'mobile':'56 32 45 34 14',
     'email':'<a href="#">lindsay.ferguson@reqres.in</a>',
     'status': '<span class="badge rounded-pill" id="badge">Active</span>',
@@ -56,7 +56,7 @@ var myArray = [
     },
 
     {'photo': '<img id="img" src="https://randomuser.me/api/portraits/thumb/women/80.jpg"class="rounded" alt=""/>', 
-    'member':'Linda Funke', 
+    'member':'Nathalie Bruks', 
     'mobile':'02 32 45 34 14',
     'email':'<a href="#">lindsay.ferguson@reqres.in</a>',
     'status': '<span class="badge rounded-pill" id="badge">Active</span>',
