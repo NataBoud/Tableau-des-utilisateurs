@@ -361,7 +361,7 @@ th:first-child {
 
 @media (max-width: 1378px) {
   th {
-    min-width: 8.8rem;
+    min-width: 9.8rem;
   }
   a.nav-link {
     font-size: .82rem;
@@ -462,9 +462,6 @@ th:first-child {
     font-size: .75rem;
     justify-content: start;
     padding-left: .5rem; 
-  }
-  th {
-    min-width: 8.8rem;
   }
 }
 
